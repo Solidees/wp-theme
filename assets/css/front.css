@@ -1,0 +1,179 @@
+body {
+	background-color: #B7CD20;
+}
+#page {
+	background-color: #fff;
+	background-attachment: scroll;
+    background-image: url("../images/vivre-ensemble-2.gif");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------------
+	NAVBAR
+------------------------------------ */
+.navbar.navbar-default {
+	border: 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #5E5E5E; font-weight: bold;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus, 
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus, 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #5E5E5E;
+    color: #fff;
+}
+
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus, 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #fff;
+    color: #FF8E14;
+}
+
+/* ------------------------------------
+	FOOTER
+------------------------------------ */
+.scroll-to-top:hover {
+    background: none repeat scroll 0 0 #FF8E14;
+    opacity: 0.8;
+}
+
+/* ------------------------------------
+	BUTTON
+------------------------------------ */
+.btn-default, .label-default {
+    background-color: #B7CD20;
+    border-color: #819B20;
+    color: #fff;
+}
+.btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
+    background-color: #FF8E14;
+    border-color: #fff;
+}
+.btn-primary, .label-primary {
+    background-color: #FF8E14;
+    border-color: #828282;
+    color: #fff;
+}
+.btn-primary:hover, .label-primary[href]:hover, .label-primary[href]:focus, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
+    background-color: #B7CD20;
+    border-color: #fff;
+}
+
+
+/* ------------------------------------
+	CONTENT
+------------------------------------ */
+#content {
+    margin-bottom: 40px;
+    margin-top: 116px;
+}
+.archive .entry-title {
+    font-size: 26px;
+}
+.btn.btn-default.read-more {
+    background-color: transparent;
+    border: 1px solid #e8e8e8;
+    color: #5E5E5E;
+    float: right;
+    margin-top: 10px;
+}
+.btn.btn-default.read-more:hover {
+    background-color: #5E5E5E;
+    color: #fff;
+}
+
+/* ------------------------------------
+	HOME
+------------------------------------ */
+.home .site-main { position: relative; }
+.home #splash-container { padding-right: 1px; }
+.home #canvas-container { padding-left: 1px; }
+.home .site-main article { position: absolute; top: 0; left: 0; z-index: -1; width: 50%; overflow: hidden; height: 100px; left: 25%; }
+.home .site-main .btn { width: 50%; margin: 0 0 0 0; padding: 0 0 0 0; border-radius: 0; border: 0; line-height: 3em; left: 0; }
+.home #content .widgettitle {
+	background-color: rgba(183, 205, 32, 1);
+	background-color: rgba(94, 94, 94, 1);
+	color: #fff; padding: 6px;
+}
+/*.jumbotron-content {
+	padding: 1em;
+	background-color: rgba(183, 205, 32, 0.5);
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 6px;
+}*/
+
+/* ------------------------------------
+	WIDGET
+------------------------------------ */
+h3.widget-title {
+	color: #5E5E5E;
+}
+
+/* ------------------------------------
+	TYPOGRAPHIE
+------------------------------------ */
+a {
+    color: #FF8E14;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #FF8E14;
+}
+
+/* ------------------------------------
+	RESPONSIVE
+------------------------------------ */
+@media (max-width: 990px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+	#content { margin-top: 5px; }
+	body { background: none !important; }
+	#page { background: none !important; background-color: #fff;}
+	/* home */
+	.home #splash-container { padding-right: 15px; }
+	.home #canvas-container { display: none; }
+}
